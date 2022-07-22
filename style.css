@@ -1,0 +1,68 @@
+.container{
+    text-align: center;
+    width: 50%;
+    height: 30%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background:url(./hao-wang-pVq6YhmDPtk-unsplash.jpg);
+    position: relative;
+    z-index: -5;
+}
+button{
+    position: relative;
+    bottom: 130px;
+    margin: 20px 0 20px 0;
+    font-size: 2rem;
+    border-radius: 30px;
+    color: aliceblue;
+    background-color: blueviolet;
+    padding: 10px;
+    width: 250px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(184, 145, 220);
+}
+img{
+    position: relative;
+    z-index: -1;
+    bottom: 150px;
+    transition: 0.5s;
+}
+h1{
+    font-size: 4rem;
+    position: relative;
+    z-index: 5;
+    top: 175px;
+    right: 80px;
+    color: blueviolet;
+}
+p{
+    text-decoration:underline;
+    font-size: 4rem;
+    color: blueviolet;
+}
+.clicked{
+    transform:  rotateY(360deg);
+    
+}
+@media (max-width: 900px){
+    img{
+        height: 150px;
+        width: 150px;
+    }
+    h1{
+        top: 20px;
+        left: -25px;
+    }
+    button{
+        font-size: 1rem;
+        width: 100px;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+}
+
